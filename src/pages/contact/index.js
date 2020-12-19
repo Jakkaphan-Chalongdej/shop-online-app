@@ -31,6 +31,7 @@ export default function Contact() {
               <b>สำนักงานนครราชสีมา </b>
               <br />
               <br />
+              <br />
               ที่อยู่ : 3279/25 ถ.สืบศิริ ต.ในเมือง อ.เมือง จ.นครราชสีมา 30000
               <br />
               3279/25 Suebsiri Rd, T.Nimueng, A.Mueng,
