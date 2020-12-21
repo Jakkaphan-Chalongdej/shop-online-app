@@ -4,7 +4,7 @@ $color-blue: #60b0f1;
 $color-light-grey: #ebebeb;
 $color-dark: #343434;
 $max-width: 1300px;
-
+$inherit: #60b0f1;
 @mixin centered {
   margin-top: "100px";
   width: 100%;
@@ -52,6 +52,69 @@ body {
   margin-right: auto;
   text-align: right;
   font-weight: bold;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+.active {
+  background-color: green;
+  color: white;
+}
+
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 .contact_font {
   font-size: 20px;
@@ -109,15 +172,11 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.slider-content .buttonslide {
+.slider-content .inner .buttonslide {
+  position: relative;
   -webkit-transition-delay: 0s;
-
-  box-sizing: border-box;
-
-  top: 50%;
-  left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(50%, 600%);
+  transform: translate(50%, 450%);
   transition-delay: 0s;
 }
 
@@ -174,7 +233,7 @@ body {
 
 @media (max-height: 500px) {
   .slider-wrapper,
-  .slider-content .buttonslide,
+  .slider-content .inner .buttonslide,
   .slide {
     height: calc(100vh - 75px);
   }
@@ -182,7 +241,7 @@ body {
 
 @media (max-width: 640px) {
   .slider-wrapper,
-  .slider-content .buttonslide,
+  .slider-content .inner .buttonslide,
   .slide {
     height: calc(80vh - 75px);
   }
@@ -246,10 +305,10 @@ body {
   height: "20rem";
   margin: 1rem;
   background-color: #ffffff;
-  flex-basis: 45%;
+  // flex-basis: 45%;
   padding: 1.5rem;
   text-align: left;
-  color: inherit;
+
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
@@ -413,6 +472,10 @@ body {
     grid-area: title;
     font-size: 32px;
     font-weight: bold;
+    @include mobile {
+      font-weight: bold;
+      font-size: 16px;
+    }
   }
 
   &__description {
@@ -435,11 +498,16 @@ body {
 
   &__image {
     grid-area: image;
-    width: 100%;
-    height: 100%;
+    // width: 100%;
+    // height: 100%;
+
     object-fit: cover;
     border-radius: 4px;
-    box-shadow: 0px 18.025px 43.775px rgba(0, 0, 0, 0.25);
+    // box-shadow: 0px 18.025px 43.775px rgba(0, 0, 0, 0.25);
+    @include mobile {
+      max-width: 250px;
+      max-height: 250px;
+    }
   }
 
   &__price-button-container {
@@ -459,8 +527,17 @@ body {
     background-color: $color-blue;
     color: white;
     position: relative;
-    animation: fadeBuy 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-    animation-delay: 0s;
+    // animation: fadeBuy 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    // animation-delay: 0s;
+    @include mobile {
+      margin-left: 60px;
+      font-size: 10pt;
+      font-weight: bold;
+      border-radius: 4px;
+      padding: 6px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 
     &:hover {
       transition: 0.2s all;

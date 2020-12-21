@@ -12,14 +12,15 @@ export default function Slide({ content }) {
             style={{
               background: `url('${item.image}') no-repeat center center `,
               backgroundSize: "100%",
+              
             }}
           >
             <div className="inner ">
               <h1>{item.title}</h1>
               <p>{item.description}</p>
-              <button className='buttonslide'>{item.button}</button>
+              
               {/* <Link to={item.href}>
-                
+                <button className='buttonslide'>{item.button}</button>
               </Link> */}
             </div>
           </div>

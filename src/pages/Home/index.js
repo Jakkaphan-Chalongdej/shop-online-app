@@ -9,64 +9,53 @@ export default function Home() {
   const content = [
     {
       title: "",
-      image: "/images/comingsoon.jpg",
+      image: "/images/Banner 1018x387-02.jpg",
       description: "",
       button: "Buy Now",
       href: "#productA",
     },
     {
       title: "",
-      image: "/images/comingsoon.jpg",
+      image: "/images/Banner 1018x387-01.jpg",
       description: "",
       button: "Buy Now",
       href: "#productA",
     },
-    {
-      title: "",
-      image: "/images/comingsoon.jpg",
-      description: "",
-      button: "Buy Now",
-      href: "#productB",
-    },
-    {
-      title: "",
-      image: "/images/comingsoon.jpg",
-      description: "",
-      button: "Buy Now",
-      href: "#productB",
-    },
+   
   ];
   const popPDA = [
     {
-      head_title:"",
-      title: "Coming Soon",
-      image: "/images/comingPD.jpg",
-      description: "",
+      head_title: "",
+      image: "/images/DS-2CD2021G1-I.jpg",
+      title: "กล้องวงจรปิดHikvision ",
+      id: "1",
+      description: "DS-2CD2021G1-I",
       // price: "xxx.xx",
     },
   ];
   const popPDB = [
     {
-      head_title:"",
+      head_title: "",
       title: "Coming Soon",
-      image: "/images/comingPDB.jpg",
+      image: "/images/cmi p66s.jpeg",
       description: "",
       // price: "xxx.xx",
     },
   ];
   return (
     <>
-    
       <Slide content={content} />
       <div id="productA">
-        <PopProducts popPD={popPDA} head_title='Camera' />
-        <ProductStore prop_product={ProductA} head="Store A" />
+        <PopProducts popPD={popPDA} head_title="กล้องวงจรปิด" />
+        <ProductStore prop_product={ProductA} head="กล้องวงจรปิด แนะนำ " />
       </div>
-      <div id="productA">
-        <PopProducts popPD={popPDB} head_title='' />
-        <ProductStore prop_product={ProductB} head="Store B" />
+      <div style={{ marginTop: "200px" }}>
+        <PopProducts popPD={popPDB} head_title="เครื่องสแกนลายนิ้วมือ " />
+        <ProductStore
+          prop_product={ProductB}
+          head="เครื่องสแกนลายนิ้วมือ แนะนำ"
+        />
       </div>
-     
     </>
   );
 }

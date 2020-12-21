@@ -16,8 +16,8 @@ export default function ProductAll({ all }) {
                       src={product.image}
                       alt={product.title}
                       quality="75%"
-                      width={600}
-                      height={460}
+                      width={330}
+                      height={300}
                     />
                   </picture>
                   <h1 className="product__title" style={{ marginTop: "15px" }}>

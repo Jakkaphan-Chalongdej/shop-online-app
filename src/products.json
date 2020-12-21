@@ -1,135 +1,93 @@
 {
   "productA":[
     {
-      "image": "/images/comingPD.jpg",
-      "title": "",
-      "id": "sticker_logo_pack",
-      "description": "Coming Soon",
+    
+      "image": "/images/DS-2CD2021G1-I.jpg",
+      "title": "กล้องวงจรปิดHikvision ",
+      "id": "1",
+      "description": "DS-2CD2021G1-I",
       "price": "XXX.XX"
     },
     {
-      "image": "/images/comingPD.jpg",
-      "title": "",
-      "id": "sticker_logo_pack",
-      "description": "Coming Soon",
+      "image": "/images/DS-2CD1123GOE-I.jpg",
+      "title": "กล้องวงจรปิดHikvision",
+      "id": "2",
+      "description": "DS-2CD1123G0E-I",
       "price": "XXX.XX"
     },
     {
-      "image": "/images/comingPD.jpg",
-      "title": "",
-      "id": "sticker_logo_pack",
-      "description": "Coming Soon",
+      "image": "/images/DS-2CD1023G0E-I.jpeg",
+      "title": "กล้องวงจรปิดHikvision",
+      "id": "3",
+      "description": "DS-2CD1023G0E-I",
       "price": "XXX.XX"
     },
     {
-      "image": "/images/comingPD.jpg",
-      "title": "",
-      "id": "sticker_logo_pack",
-      "description": "Coming Soon",
+      "image": "/images/16003-ds_2ce56d8t_it3zf-640x480.jpg",
+      "title": "กล้องวงจรปิดHikvision",
+      "id": "4",
+      "description": "CDS-2CE56D8T-IT3ZF",
       "price": "XXX.XX"
     },
     {
-      "image": "/images/comingPD.jpg",
-      "title": "",
-      "id": "sticker_logo_pack",
-      "description": "Coming Soon",
+      "image": "/images/DS-2CE16U1T-ITF.jpg",
+      "title": "กล้องวงจรปิดHikvision",
+      "id": "5",
+      "description": "DS-2CE16U1T-ITF",
       "price": "XXX.XX"
     },
     {
-      "image": "/images/comingPD.jpg",
-      "title": "",
-      "id": "sticker_logo_pack",
-      "description": "Coming Soon",
+      "image": "/images/20170605074453780.png",
+      "title": "กล้องวงจรปิดHikvision",
+      "id": "6",
+      "description": "DS-2CD2685FWD-IZS",
       "price": "XXX.XX"
     }
   ],
   "productB":[
     {
-      "image": "/images/comingPDB.jpg",
+      "image": "/images/cmi p66s.jpeg",
+      "title": "เครื่องสแกนลายนิ้วมือHIP ",
+      "id": "1",
+      "description": "Ci P66S",
+      "price": "XXX.XX"
+    },
+    {
+      "image": "/images/comingPD.jpg",
       "title": "",
-      "id": "sticker_logo_pack",
+      "id": "2",
       "description": "Coming Soon",
       "price": "XXX.XX"
     },
     {
-      "image": "/images/comingPDB.jpg",
+      "image": "/images/comingPD.jpg",
       "title": "",
-      "id": "sticker_logo_pack",
+      "id": "3",
       "description": "Coming Soon",
       "price": "XXX.XX"
     },
     {
-      "image": "/images/comingPDB.jpg",
+      "image": "/images/comingPD.jpg",
       "title": "",
-      "id": "sticker_logo_pack",
+      "id": "4",
       "description": "Coming Soon",
       "price": "XXX.XX"
     },
     {
-      "image": "/images/comingPDB.jpg",
+      "image": "/images/comingPD.jpg",
       "title": "",
-      "id": "sticker_logo_pack",
+      "id": "5",
       "description": "Coming Soon",
       "price": "XXX.XX"
     },
     {
-      "image": "/images/comingPDB.jpg",
+      "image": "/images/comingPD.jpg",
       "title": "",
-      "id": "sticker_logo_pack",
-      "description": "Coming Soon",
-      "price": "XXX.XX"
-    },
-    {
-      "image": "/images/comingPDB.jpg",
-      "title": "",
-      "id": "sticker_logo_pack",
-      "description": "Coming Soon",
-      "price": "XXX.XX"
-    }
-  ],
-  "productC":[
-    {
-      "image": "/images/comingPDB.jpg",
-      "title": "",
-      "id": "sticker_logo_pack",
-      "description": "Coming Soon",
-      "price": "XXX.XX"
-    },
-    {
-      "image": "/images/comingPDB.jpg",
-      "title": "",
-      "id": "sticker_logo_pack",
-      "description": "Coming Soon",
-      "price": "XXX.XX"
-    },
-    {
-      "image": "/images/comingPDB.jpg",
-      "title": "",
-      "id": "sticker_logo_pack",
-      "description": "Coming Soon",
-      "price": "XXX.XX"
-    },
-    {
-      "image": "/images/comingPDB.jpg",
-      "title": "",
-      "id": "sticker_logo_pack",
-      "description": "Coming Soon",
-      "price": "XXX.XX"
-    },
-    {
-      "image": "/images/comingPDB.jpg",
-      "title": "",
-      "id": "sticker_logo_pack",
-      "description": "Coming Soon",
-      "price": "XXX.XX"
-    },
-    {
-      "image": "/images/comingPDB.jpg",
-      "title": "",
-      "id": "sticker_logo_pack",
+      "id": "6",
       "description": "Coming Soon",
       "price": "XXX.XX"
     }
   ]
+  
 }
   

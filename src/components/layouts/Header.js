@@ -22,7 +22,7 @@ export default function Header() {
             <picture>
               <img
                 src="/logo-title.png"
-                alt="AST"
+                alt="AST-logo"
                 width={64}
                 height={42}
                 quality="70%"

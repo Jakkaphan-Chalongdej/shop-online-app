@@ -20,9 +20,6 @@ const responsive = {
   },
 };
 export default function ProductStore({ prop_product, head }) {
-  function put() {
-    <Allstore component={prop_product} />;
-  }
   return (
     <div>
       <div className="product-list">
@@ -30,7 +27,7 @@ export default function ProductStore({ prop_product, head }) {
         <div>
           <h1 className="product__price ">{head}</h1>
           <div className="head_title_store">
-            <Link to="/allstore" onClick={put}>
+            <Link to="/">
               <h1>All PRODUCT</h1>
             </Link>
           </div>
@@ -53,8 +50,8 @@ export default function ProductStore({ prop_product, head }) {
                       src={product.image}
                       alt={product.title}
                       quality="75%"
-                      width={600}
-                      height={460}
+                      width='290px'
+                      height='290px'
                     />
                   </picture>
                   <h1 className="product__title" style={{ marginTop: "15px" }}>
@@ -65,7 +62,7 @@ export default function ProductStore({ prop_product, head }) {
                     <p className="product__price">฿{product.price}</p>
 
                     <button
-                      className="product__button1 snipcart-add-item"
+                      className="product__button snipcart-add-item"
                       data-item-id={product.id}
                       data-item-image={product.image}
                       data-item-name={product.title}
