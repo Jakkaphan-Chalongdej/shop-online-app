@@ -40,7 +40,19 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.head_title h1 {
+  @include centered;
+  margin-bottom: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+.head_title_store h1 {
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+  font-weight: bold;
+}
 .contact_font {
   font-size: 20px;
   p {
@@ -49,21 +61,21 @@ body {
   b {
     font-size: 25px;
   }
-  h1{
+  h1 {
     font-size: 35px;
   }
-  h2{
+  h2 {
     font-size: 3opx;
   }
 }
 .buttonslide {
-  -webkit-appearance: none;
-  appearance: none;
-  -webkit-filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.1));
-  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.1));
-  -webkit-transition: all 0.5s ease;
-  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.1));
-  -webkit-transition: all 0.5s ease;
+  // -webkit-appearance: none;
+  // appearance: none;
+  // -webkit-filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.1));
+  // filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.1));
+  // -webkit-transition: all 0.5s ease;
+  // filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.1));
+  // -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   border: none;
   background: #ffd800;
@@ -77,8 +89,8 @@ body {
 }
 
 .buttonslide:hover {
-  color: #ffffff;
-  background: #59ca68;
+  color: #000000;
+  background: #f3f5f3;
   -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
 }

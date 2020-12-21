@@ -9,8 +9,8 @@ export default function Contact() {
         <br />
         <br />
         <Row>
-          <Col className="center">
-            <div style={{ marginTop: "80px" }}>
+          <Col>
+            <div className="center" style={{marginTop:'200px'}}>
               <img src="/logo-AST.png" alt="logo-navbaer" />
             </div>
           </Col>
@@ -27,6 +27,8 @@ export default function Contact() {
               47/316 Poppular Rd., Ban Mai, Pak Kret,
               <br />
               Nonthaburi 11120 <br />
+              <br />
+              <br />
               <br />
               <b>สำนักงานนครราชสีมา </b>
               <br />

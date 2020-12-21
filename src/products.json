@@ -86,6 +86,50 @@
       "description": "Coming Soon",
       "price": "XXX.XX"
     }
+  ],
+  "productC":[
+    {
+      "image": "/images/comingPDB.jpg",
+      "title": "",
+      "id": "sticker_logo_pack",
+      "description": "Coming Soon",
+      "price": "XXX.XX"
+    },
+    {
+      "image": "/images/comingPDB.jpg",
+      "title": "",
+      "id": "sticker_logo_pack",
+      "description": "Coming Soon",
+      "price": "XXX.XX"
+    },
+    {
+      "image": "/images/comingPDB.jpg",
+      "title": "",
+      "id": "sticker_logo_pack",
+      "description": "Coming Soon",
+      "price": "XXX.XX"
+    },
+    {
+      "image": "/images/comingPDB.jpg",
+      "title": "",
+      "id": "sticker_logo_pack",
+      "description": "Coming Soon",
+      "price": "XXX.XX"
+    },
+    {
+      "image": "/images/comingPDB.jpg",
+      "title": "",
+      "id": "sticker_logo_pack",
+      "description": "Coming Soon",
+      "price": "XXX.XX"
+    },
+    {
+      "image": "/images/comingPDB.jpg",
+      "title": "",
+      "id": "sticker_logo_pack",
+      "description": "Coming Soon",
+      "price": "XXX.XX"
+    }
   ]
 }
   

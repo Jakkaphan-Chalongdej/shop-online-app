@@ -1,50 +1,13 @@
-import Carousel from "react-multi-carousel";
-import Allstore from "../pages/Allstore";
 import React from "react";
-import { Link } from "react-router-dom";
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-    paritialVisibilityGutter: 60,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 1,
-    paritialVisibilityGutter: 50,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    paritialVisibilityGutter: 30,
-  },
-};
-export default function ProductStore({ prop_product, head }) {
-  function put() {
-    <Allstore component={prop_product} />;
-  }
+import { Row, Col } from "react-bootstrap";
+export default function ProductAll({ all }) {
   return (
     <div>
       <div className="product-list">
-        <div className="product2"></div>
-        <div>
-          <h1 className="product__price ">{head}</h1>
-          <div className="head_title_store">
-            <Link to="/allstore" onClick={put}>
-              <h1>All PRODUCT</h1>
-            </Link>
-          </div>
-          <Carousel
-            ssr
-            partialVisbile
-            itemClass="image-item"
-            responsive={responsive}
-            autoPlaySpeed={3000}
-            autoPlay={true}
-            infinite
-          >
-            {prop_product.slice(0, 5).map((product) => {
-              return (
+        <Row gutter={100}>
+          {all.map((product) => {
+            return (
+              <Col xs={{ span: 12 }} sm={{ span: 4 }}>
                 <div key={product.id} className="card">
                   <picture>
                     <img
@@ -76,10 +39,10 @@ export default function ProductStore({ prop_product, head }) {
                     </button>
                   </div>
                 </div>
-              );
-            })}
-          </Carousel>
-        </div>
+              </Col>
+            );
+          })}
+        </Row>
       </div>
     </div>
   );

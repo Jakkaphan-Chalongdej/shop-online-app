@@ -1,14 +1,12 @@
 import { Nav, Navbar, Image } from "react-bootstrap";
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import React from "react";
 const pathnames = [
-  { href: "/", label: "camera" },
-  { href: "/", label: "IOT" },
-  { href: "/", label: "security" },
+  { href: "/", label: "home" },
+  { href: "/allproducts", label: "all products " },
   { href: "/contact", label: "Contact" },
 ];
-
 export default function Header() {
   return (
     <>
@@ -20,7 +18,7 @@ export default function Header() {
         variant="light"
       >
         <Navbar.Brand ml="50px">
-          <Nav.Link path="/">
+          <NavLink to="/">
             <picture>
               <img
                 src="/logo-title.png"
@@ -30,7 +28,7 @@ export default function Header() {
                 quality="70%"
               />
             </picture>
-          </Nav.Link>
+          </NavLink>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -50,16 +48,14 @@ export default function Header() {
           <Nav>
             <Link style={{ textDecoration: "none" }} width={50} height={50}>
               <Image
-                style={{ marginLeft: "50px", marginBottom: "5px" }}
+                style={{
+                  marginLeft: "20px",
+                  marginBottom: "5px",
+                  marginRight: "50px",
+                }}
                 src="../../../cart.png"
                 width="25px"
               />
-              <span
-                style={{ marginLeft: "20px", marginRight: "40px" }}
-                className="snipcart-total-price font-weight-bold link"
-              >
-                ฿ 0.00
-              </span>
             </Link>
           </Nav>
         </Navbar.Collapse>

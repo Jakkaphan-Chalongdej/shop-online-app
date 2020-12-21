@@ -1,6 +1,10 @@
-export default function PopProducts({ popPD }) {
+import React from "react";
+export default function PopProducts({ popPD, head_title }) {
   return (
     <div className="product-list">
+      <div className="head_title">
+        <h1>{head_title}</h1>
+      </div>
       <min>
         {popPD.map((product) => {
           return (

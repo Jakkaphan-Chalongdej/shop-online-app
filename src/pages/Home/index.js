@@ -38,6 +38,7 @@ export default function Home() {
   ];
   const popPDA = [
     {
+      head_title:"",
       title: "Coming Soon",
       image: "/images/comingPD.jpg",
       description: "",
@@ -46,6 +47,7 @@ export default function Home() {
   ];
   const popPDB = [
     {
+      head_title:"",
       title: "Coming Soon",
       image: "/images/comingPDB.jpg",
       description: "",
@@ -57,14 +59,14 @@ export default function Home() {
     
       <Slide content={content} />
       <div id="productA">
-        <PopProducts popPD={popPDA} />
+        <PopProducts popPD={popPDA} head_title='Camera' />
         <ProductStore prop_product={ProductA} head="Store A" />
       </div>
       <div id="productA">
-        <PopProducts popPD={popPDB} />
+        <PopProducts popPD={popPDB} head_title='' />
         <ProductStore prop_product={ProductB} head="Store B" />
       </div>
-      {/* <Iot /> */}
+     
     </>
   );
 }
