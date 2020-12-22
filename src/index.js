@@ -7,9 +7,11 @@ import "react-bootstrap";
 import "./styles.scss";
 import "react-multi-carousel/lib/styles.css";
 import "react-animated-slider/build/horizontal.css";
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    
   </React.StrictMode>,
   document.getElementById("root")
 );

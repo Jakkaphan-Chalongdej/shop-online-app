@@ -4,7 +4,7 @@ $color-blue: #60b0f1;
 $color-light-grey: #ebebeb;
 $color-dark: #343434;
 $max-width: 1300px;
-$inherit: #60b0f1;
+
 @mixin centered {
   margin-top: "100px";
   width: 100%;
@@ -40,6 +40,13 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.dropdown-menu {
+  height: 300px;
+  overflow-y: scroll;
+
+}
+
 .head_title h1 {
   @include centered;
   margin-bottom: 100px;
@@ -55,67 +62,29 @@ body {
 }
 
 .sidenav {
-  height: 100%;
-  width: 200px;
+  width: 130px;
+  margin-top: 200px;
   position: fixed;
   z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
+  top: 20px;
+  left: 10px;
+  background: #eee;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding: 8px 0;
 }
 
-
-.sidenav a, .dropdown-btn {
+.sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 20px;
-  color: #818181;
+  font-size: 25px;
+  color: #2196f3;
   display: block;
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
 }
 
-
-.sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
+.sidenav a:hover {
+  color: #064579;
 }
 
-
-.main {
-  margin-left: 200px; /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-.active {
-  background-color: green;
-  color: white;
-}
-
-
-.dropdown-container {
-  display: none;
-  background-color: #262626;
-  padding-left: 8px;
-}
-
-
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;
-}
-
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
 .contact_font {
   font-size: 20px;
   p {
@@ -419,7 +388,6 @@ body {
 
 .product-list {
   @include centered;
-  margin-top: 100px;
 }
 
 .product {

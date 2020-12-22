@@ -3,6 +3,7 @@ import ProductStore from "../../components/ProductStore";
 import Slide from "../../components/layouts/Slide";
 import PopProducts from "../../components/PopProducts";
 import Products from "../../products.json";
+
 export default function Home() {
   const ProductA = Products.productA;
   const ProductB = Products.productB;
@@ -21,7 +22,6 @@ export default function Home() {
       button: "Buy Now",
       href: "#productA",
     },
-   
   ];
   const popPDA = [
     {
@@ -45,9 +45,11 @@ export default function Home() {
   return (
     <>
       <Slide content={content} />
+      
       <div id="productA">
         <PopProducts popPD={popPDA} head_title="กล้องวงจรปิด" />
         <ProductStore prop_product={ProductA} head="กล้องวงจรปิด แนะนำ " />
+      
       </div>
       <div style={{ marginTop: "200px" }}>
         <PopProducts popPD={popPDB} head_title="เครื่องสแกนลายนิ้วมือ " />

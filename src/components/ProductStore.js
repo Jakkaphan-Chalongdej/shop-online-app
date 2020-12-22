@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import Allstore from "../pages/Allstore";
 import React from "react";
-import { Link } from "react-router-dom";
+
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -26,11 +26,7 @@ export default function ProductStore({ prop_product, head }) {
         <div className="product2"></div>
         <div>
           <h1 className="product__price ">{head}</h1>
-          <div className="head_title_store">
-            <Link to="/">
-              <h1>All PRODUCT</h1>
-            </Link>
-          </div>
+         
           <Carousel
             ssr
             partialVisbile
