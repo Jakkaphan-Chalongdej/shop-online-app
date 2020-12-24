@@ -5,13 +5,17 @@ import Footer from "./components/layouts/Footer";
 
 import NavbarRoute from "./components/route/Route";
 
+
+
+
 function App() {
+ 
   return (
     <>
-      
-
       <NavbarRoute />
-
+     
+        
+     
       <Footer />
     </>
   );

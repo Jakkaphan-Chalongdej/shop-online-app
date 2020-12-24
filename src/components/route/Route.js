@@ -5,7 +5,7 @@ import Home from "../../pages/Home";
 import allProduct from "../../pages/AllProduct";
 import content from "../../pages/Allstore";
 import Header from "../layouts/Header";
-
+import cart from "../../pages/Cart/index.js";
 export default function Router() {
   return (
     <BrowserRouter>
@@ -15,6 +15,7 @@ export default function Router() {
         <Route path="/contact" component={Contact} exact={true} />
         <Route path="/allproducts" component={allProduct} exact={true} />
         <Route path="/allstore" component={content} exact={true} />
+        <Route path="/cart" component={cart} exact={true} />
       </Switch>
       
     </BrowserRouter>

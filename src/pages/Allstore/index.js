@@ -1,10 +1,6 @@
 import React from "react";
 
-import All from "../../components/ProductsAll";
+//import All from "../../components/ProductsAll";
 export default function AllProduct({ component }) {
-  return (
-    <div>
-      <All all={component} />
-    </div>
-  );
+  return <div>{/* <All all={component} /> */}</div>;
 }

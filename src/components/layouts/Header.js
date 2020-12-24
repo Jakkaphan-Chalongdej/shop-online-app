@@ -1,8 +1,8 @@
 import { Nav, Navbar, Image, Dropdown } from "react-bootstrap";
-
+import { connect } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
 import React from "react";
-
+import { useSelector } from "react-redux";
 const pathnames = [
   { href: "/", label: "home" },
   {
@@ -47,8 +47,9 @@ const pathnames = [
   },
   { href: "/contact", label: "Contact" },
 ];
-
-export default function Header() {
+const select = (state) => state.cartTotal;
+function Header() {
+  const cartTotal = useSelector(select);
   return (
     <>
       <Navbar
@@ -79,11 +80,14 @@ export default function Header() {
                 return (
                   <Navbar>
                     <Dropdown>
-                      <NavLink style={{color:'#343a40'}} to={`${pathname.href}`}>
+                      <NavLink
+                        style={{ color: "#343a40" }}
+                        to={`${pathname.href}`}
+                      >
                         {`${pathname.label}`}
                       </NavLink>
                       <Dropdown.Toggle split id="dropdown" />
-                      <Dropdown.Menu key={i} alignRight style={{}}>
+                      <Dropdown.Menu className='dropdown-menu' key={i} alignRight>
                         {pathname.subMenus.map(function (subMenu, i) {
                           return (
                             <Dropdown.Item key={i}>
@@ -109,8 +113,14 @@ export default function Header() {
             })}
           </Nav>
           <Nav>
-            <Link style={{ textDecoration: "none" }} width={50} height={50}>
+            <Link
+              to="/cart"
+              style={{ textDecoration: "none" }}
+              width={50}
+              height={50}
+            >
               <Image
+                className="minicart-wrapper"
                 style={{
                   marginLeft: "20px",
                   marginBottom: "5px",
@@ -119,6 +129,7 @@ export default function Header() {
                 src="../../../cart.png"
                 width="25px"
               />
+              <span className="minicart-wrapper3">{cartTotal}</span>
             </Link>
           </Nav>
         </Navbar.Collapse>
@@ -126,3 +137,4 @@ export default function Header() {
     </>
   );
 }
+export default connect()(Header);
