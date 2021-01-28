@@ -7,7 +7,7 @@ import "react-bootstrap";
 import "./styles.scss";
 import "react-multi-carousel/lib/styles.css";
 import "react-animated-slider/build/horizontal.css";
-import cartReducer from "./components/reducers/cartReducer";
+import cartReducer from "./store/reducers/cartReducer";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 

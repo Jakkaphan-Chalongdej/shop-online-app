@@ -5,7 +5,7 @@ import {
   removeItem,
   addQuantity,
   subtractQuantity,
-} from "../../components/actions/cartActions";
+} from "../../store/actions/cartActions";
 import Recipe from "../../components/Recipe";
 import "./cart.scss";
 import { IoMdAddCircle, IoMdRemoveCircle } from "react-icons/io";

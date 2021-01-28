@@ -1,7 +1,7 @@
 import React from "react";
 import { Row } from "react-bootstrap";
 import { connect } from "react-redux";
-import { addToCart } from "./actions/cartActions";
+import { addToCart } from "../store/actions/cartActions";
 import { useSelector, useDispatch } from "react-redux";
 import { IoBagAdd } from "react-icons/io5";
 import { Link } from "react-router-dom";
@@ -9,7 +9,6 @@ const select = (state) => state.items;
 function ProductAll() {
   const dispatch = useDispatch();
   const product = useSelector(select);
-
   let productList = product.map((product) => {
     return (
       <div key={product.id} className="card">

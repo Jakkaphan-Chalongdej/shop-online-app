@@ -3,8 +3,9 @@ import ProductStore from "../../components/ProductStore";
 import Slide from "../../components/layouts/Slide";
 import PopProducts from "../../components/PopProducts";
 import Products from "../../products.json";
-
-export default function Home() {
+import { connect } from "react-redux";
+import Sale from "../Sale/";
+function Home() {
   const ProductA = Products.productA;
   const ProductB = Products.productB;
   const content = [
@@ -42,22 +43,21 @@ export default function Home() {
       // price: "xxx.xx",
     },
   ];
+
   return (
     <>
       <Slide content={content} />
       
       <div id="productA">
-        <PopProducts popPD={popPDA} head_title="กล้องวงจรปิด" />
-        <ProductStore prop_product={ProductA} head="กล้องวงจรปิด แนะนำ " />
+        <PopProducts popPD={popPDA} head_title="สินค้าแนะนำ" />
+        <ProductStore prop_product={ProductA} head="" />
       
       </div>
       <div style={{ marginTop: "200px" }}>
-        <PopProducts popPD={popPDB} head_title="เครื่องสแกนลายนิ้วมือ " />
-        <ProductStore
-          prop_product={ProductB}
-          head="เครื่องสแกนลายนิ้วมือ แนะนำ"
-        />
+        <PopProducts popPD={popPDB} head_title=" สินค้าลดราคา " />
+       <Sale/>
       </div>
     </>
   );
 }
+export default connect()(Home)

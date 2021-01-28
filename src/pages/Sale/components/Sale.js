@@ -1,8 +1,11 @@
-import Carousel from "react-multi-carousel";
-import { addToCart } from "../store/actions/cartActions";
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { connect } from "react-redux";
+// import { currencyToUse } from "../../../Utility/currency";
+import { VISIBILITY_FILTERS } from "../../../static/constants";
+import { getProductsByFilter } from "../../../store/selectors";
+import "../../style.css";
+import Carousel from "react-multi-carousel";
+import { addToCart } from "../../../store/actions/cartActions";
+import { connect ,useDispatch} from "react-redux";
 import { Link } from "react-router-dom";
 const responsive = {
   desktop: {
@@ -21,15 +24,14 @@ const responsive = {
     paritialVisibilityGutter: 30,
   },
 };
-
-
-const select = (state) => state.items;
-const ProductStore=({ head  }) =>{
+const Sale = (props) => {
   const dispatch = useDispatch();
-  const product = useSelector(select);
-  let productList = product.map((product) => {
+  let products = props.productsProps.map((product,index) => {
+    //let productList = product.map((product) => {
     return (
-      <div key={product.id} className="card">
+      <div key={index} className="card">
+        <p className="sale">sale</p>
+        <p className="salepromo">30%</p>
         <picture>
           <img
             draggable={false}
@@ -63,9 +65,7 @@ const ProductStore=({ head  }) =>{
     <div>
       <div className="product-list">
         <div className="product2"></div>
-        <div>
-          <h1 className="product__price ">{head}</h1>
-
+        <div>       
           <Carousel
             ssr
             partialVisbile
@@ -75,12 +75,18 @@ const ProductStore=({ head  }) =>{
             autoPlay={true}
             infinite
           >
-            {/* {prop_product.slice(0, 5).map((product) => { */}
-            {productList}
+            {products}
           </Carousel>
         </div>
       </div>
     </div>
   );
-}
-export default connect()(ProductStore);
+};
+
+const mapStateToProps = (state) => {
+  return {
+    productsProps: getProductsByFilter(state, VISIBILITY_FILTERS.SALE, 6),
+    // usedCurrencyProp: state.usedCurrency,
+  };
+};
+export default connect(mapStateToProps)(Sale);
